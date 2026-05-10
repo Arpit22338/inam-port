@@ -39,7 +39,7 @@ function App() {
       } else {
         // Phase 3: Completed
         setStatus('STATUS');
-        setStatusVal('COMPLETED MY NEB EXAMS');
+        setStatusVal('COMPLETED CLASS 12');
       }
     }, 1000);
 

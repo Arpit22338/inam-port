@@ -25,17 +25,8 @@ function App() {
         setStatusVal(`${d}D : ${h}H : ${m}M : ${s}S`);
       } else if (now >= EXAM_START && now <= EXAM_END) {
         // Phase 2: During Exams
-        const dayNum = Math.floor((now.getTime() - EXAM_START.getTime()) / (1000 * 60 * 60 * 24)) + 1;
-        const ordinal = (n: number) => {
-          if (n === 1) return 'ONE';
-          if (n === 2) return 'TWO';
-          if (n === 3) return 'THREE';
-          if (n === 4) return 'FOUR';
-          if (n === 5) return 'FIVE';
-          return n.toString();
-        };
         setStatus('STATUS');
-        setStatusVal(`NEB DAY ${ordinal(dayNum)}`);
+        setStatusVal('COMPLETED CLASS 12');
       } else {
         // Phase 3: Completed
         setStatus('STATUS');
